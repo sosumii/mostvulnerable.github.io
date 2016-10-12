@@ -1,0 +1,34 @@
+<meta charset="utf-8"> <style>h5:before { font-style: normal; font-weight: bold; font-size: 70; }</style>
+
+![](https://s3.amazonaws.com/mostvulnerable/assets/img/watering_hole-scalable.jpg)
+
+# I Told You So
+
+This is a list of developers that have been hit with a **watering hole attack** or _will be_, and provide _no authentication_ for their software. Some of the software in this list is critical backup software that runs as _root_ to clone disks, like _SuperDuper!_.
+
+_Backup software is the ultimate target of the watering hole attack_.
+
+> Watering hole is a computer attack strategy, in which the victim is a particular group (organization, industry, or region).
+> In this attack, the attacker guesses or observes which websites the group often uses and infects one or more of them with malware.
+> Eventually, some member of the targeted group gets infected.
+>
+> Relying on websites that the group trusts makes this strategy efficient, even with groups that are resistant to spear phishing and other forms of phishing.
+
+Insecurely Distributed Software | Cryptographic Signature (PGP) | Checksum (SHA256) | Exploited
+--------------------------------|-------------------------------|-------------------|-----------
+Transmission BitTorrent         | No                            | Yes       | Yes [(2)](https://en.wikipedia.org/wiki/Transmission_%28BitTorrent_client%29#Website_breach)
+SuperDuper!                     | No                            | No        | Unknown
+
+# FAQ
+
+What is the functional difference between a checksum and a signature?
+
+* Checksums ensure [data integrity](https://en.wikipedia.org/wiki/Data_integrity).
+
+* Digital signatures ensure [data authenticity](https://en.wikipedia.org/wiki/Authentication).
+
+When downloading a file, errors may occur during that process. Malware also could modify the downloaded file if you're machine is infected. The file's fingerprint (checksum) is there to tell you that the file is not altered.
+
+An attacker may host a malicious version of *transmission* on his website and makes it available to download. Verifying the checksum in this case is useless: the only way for you to be sure that you did not download a malicious version of *transmission* is to check its signature(s).
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js"></script><script src="https://github.com/reelsense/markdeep/releases/download/0.13/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
