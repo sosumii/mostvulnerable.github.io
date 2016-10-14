@@ -2,7 +2,7 @@
 
 ![](https://s3.amazonaws.com/mostvulnerable/assets/img/watering_hole-scalable.jpg)
 
-# Five Most Vulnerable
+# I Told You So
 
 This is a list of developers that have been hit with a **watering hole attack** or _will be_, and provide _no authentication_ for their software. Some of the software in this list is critical backup software that runs as _root_ to clone disks, like _SuperDuper!_.
 
@@ -14,17 +14,27 @@ _Backup software is the ultimate target of the watering hole attack_.
 >
 > Relying on websites that the group trusts makes this strategy efficient, even with groups that are resistant to spear phishing and other forms of phishing.
 
-Insecurely Distributed Software | Cryptographic Signature (PGP) | Checksum (SHA256) | Exploited
---------------------------------|-------------------------------|-------------------|-----------
-Transmission BitTorrent         | No                            | Yes               | Yes [(2)][trans]
-SuperDuper!                     | No                            | No                | Unknown
-Carbon Copy Cloner              | No                            | No                | Unknown
-Arq Backup                      | No                            | No                | Unknown
-1Password                       | No (WTF?)                     | No                | Unknown
-Librevault                      | No                            | No                | Unknown
+(##) 5 Most Vulnerable
 
-[trans]: https://en.wikipedia.org/wiki/Transmission_%28BitTorrent_client%29#Website_breach
 
+Insecurely Distributed Software | Cryptographic Signature (PGP) | Checksum (SHA256) | Exploited                  | Tell them to sign
+--------------------------------|-------------------------------|-------------------|----------------------------|------------------
+Transmission BitTorrent         | No                            | Yes               | Compromised [(2)][tran-exp]| [Submit a ticket][tran-tell]
+SuperDuper!                     | No                            | No                | Unknown                    | [Email them][supd-tell]
+Carbon Copy Cloner              | No                            | No                | Unknown                    | [Submit a ticket][ccc-tell]
+Arq Backup                      | No                            | No                | Unknown                    | [Email them][arq-tell1]
+1Password                       | No (WTF?)                     | No                | Unknown                    | [Email them][1p-tell1]
+Librevault                      | No                            | No                | Unknown                    | [Submit a ticket][lib-tell]
+
+[tran-exp]: https://en.wikipedia.org/wiki/Transmission_%28BitTorrent_client%29#Website_breach
+[tran-tell]: https://github.com/transmission/transmission/issues
+[supd-tell]: mailto:support@shirt-pocket.com?subject=Support Request
+[ccc-tell]: https://support.bombich.com/hc/en-us/requests/new
+[arq-tell1]: mailto:support@arqbackup.com?subject=Please PGP sign -mostvulnerable.com
+[1p-tell1]: mailto:support+kb@agilebits.com?subject=Question%20about%201Password
+[lib-tell]: https://github.com/Librevault/librevault/issues
+
+_[Edit Chart](https://github.com/sosumii/mostvulnerable.github.io/blob/master/index.htm) - [Report Issue](https://github.com/sosumii/mostvulnerable.github.io/issues)_
 
 # FAQ
 
