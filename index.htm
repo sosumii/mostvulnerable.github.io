@@ -14,16 +14,16 @@ _Backup software is the ultimate target of the watering hole attack_.
 >
 > Relying on websites that the group trusts makes this strategy efficient, even with groups that are resistant to spear phishing and other forms of phishing.
 
-(##) 5 Most Vulnerable
+# The Lowest Standards on the 'Most Vulnerable List'
 
 
 Insecurely Distributed Software | Cryptographic Signature (PGP) | Checksum (SHA256) | Exploited                  | Tell them to sign
 --------------------------------|-------------------------------|-------------------|----------------------------|------------------
 Transmission BitTorrent         | No                            | Yes               | Compromised [(2)][tran-exp]| [Submit a ticket][tran-tell]
+1Password                       | No (WTF?)                     | No                | Unknown                    | [Email them][1p-tell1]
 SuperDuper!                     | No                            | No                | Unknown                    | [Email them][supd-tell]
 Carbon Copy Cloner              | No                            | No                | Unknown                    | [Submit a ticket][ccc-tell]
 Arq Backup                      | No                            | No                | Unknown                    | [Email them][arq-tell1]
-1Password                       | No (WTF?)                     | No                | Unknown                    | [Email them][1p-tell1]
 Librevault                      | No                            | No                | Unknown                    | [Submit a ticket][lib-tell]
 
 [tran-exp]: https://en.wikipedia.org/wiki/Transmission_%28BitTorrent_client%29#Website_breach
@@ -38,14 +38,34 @@ _[Edit Chart](https://github.com/sosumii/mostvulnerable.github.io/blob/master/in
 
 # FAQ
 
-What is the functional difference between a checksum and a signature?
+### What is the functional difference between a checksum and a signature?
+>
+>* Checksums ensure [data integrity](https://en.wikipedia.org/wiki/Data_integrity).
+>
+>* Digital signatures ensure [data authenticity](https://en.wikipedia.org/wiki/Authentication).
+>
+>When downloading a file, errors may occur during that process. Malware also could modify the downloaded file if you're machine is infected. The file's fingerprint (checksum) >is there to tell you that the file is not altered.
+>
+>An attacker may host a malicious version of *transmission* on his website and makes it available to download. Verifying the checksum in this case is useless: the only way for you to be sure that you did not download a malicious version of *transmission* is to check its signature(s).
 
-* Checksums ensure [data integrity](https://en.wikipedia.org/wiki/Data_integrity).
+### What about Gatekeeper?
+>
+>* Any Developer ID accepted by Gatekeeper will be allowed to run.
+> * _Eg._ Transmission users were autoupdated to compromised binaries with **VALID `codesign` Developer IDs**.
+>
 
-* Digital signatures ensure [data authenticity](https://en.wikipedia.org/wiki/Authentication).
+### But I love that software. What do I do?
+>
+>* [Tell them](index.htm#toc1) you would like to keep using their software and you would like to authenticate it with a PGP signature.
+> * Some people say they don't understand how PGP works. Some say they don't care.
+>
+>* Use modern software from developers that are not averse to security best practices.
+> * [See Exemplary list below](index.htm#toc3)
+>
 
-When downloading a file, errors may occur during that process. Malware also could modify the downloaded file if you're machine is infected. The file's fingerprint (checksum) is there to tell you that the file is not altered.
+# Exemplary Best Practices
 
-An attacker may host a malicious version of *transmission* on his website and makes it available to download. Verifying the checksum in this case is useless: the only way for you to be sure that you did not download a malicious version of *transmission* is to check its signature(s).
+Cryptographic Signatures
+
 
 <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js"></script><script src="https://github.com/reelsense/markdeep/releases/download/0.13/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
