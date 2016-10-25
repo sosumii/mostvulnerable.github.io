@@ -2,9 +2,9 @@
 
 ![](https://s3.amazonaws.com/mostvulnerable/assets/img/watering_hole-scalable.jpg)
 
-# I Told You So
+# Inauthentic Downloads
 
-This is a list of developers that have been hit with a **watering hole attack** or _will be_, and provide _no authentication_ for their software. Some of the software in this list is critical backup software that runs as _root_ to clone disks, like _SuperDuper!_.
+This is a list of developers that have been hit with a **watering hole attack** or are _potential targets_, and provide _no authentication_ for their software. Some of the software in this list is critical backup software that runs as _root_ to clone disks, like _SuperDuper!_.
 
 _Backup software is the ultimate target of the watering hole attack_.
 
@@ -14,7 +14,7 @@ _Backup software is the ultimate target of the watering hole attack_.
 >
 > Relying on websites that the group trusts makes this strategy efficient, even with groups that are resistant to spear phishing and other forms of phishing.
 
-# The Lowest Standards on the 'Most Vulnerable List'
+# The Lowest Standards
 
 
 Insecurely Distributed Software | Cryptographic Signature (PGP) | Checksum (SHA256) | Exploited                  | Tell them to sign
@@ -65,7 +65,17 @@ _[Edit Chart](https://github.com/sosumii/mostvulnerable.github.io/blob/master/in
 
 # Exemplary Best Practices
 
-Cryptographic Signatures
+Exemplary          | Cryptographic Signature (PGP) | Checksum (SHA256) | Category
+-------------------|-------------------------------|-------------------|----------------------------------------------
+[Espionage][esp]   | Yes - [key][esp-pgp]          | Yes               | Encryption and Plausible Deniability
+[KeyPassX][kpx]    | Yes - [key][kpx-pgp]          | Yes               | Password Manager
+[Duplicati][dup]   | Yes - [key][dup-pgp]          | Yes               | Backup encrypted to S3, SFTP, SMB, local, etc
 
+[esp]: https://www.espionageapp.com/
+[esp-pgp]: https://www.taoeffect.com/other/A884B988.asc
+[kpx]: https://www.keepassx.org/
+[kpx-pgp]: https://www.keepassx.org/gpg/0x83135D45.asc
+[dup]: http://www.duplicati.com/
+[dup-pgp]: http://pgp.mit.edu/pks/lookup?search=0xC20E90473DAC703D&op=index
 
 <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js"></script><script src="https://github.com/reelsense/markdeep/releases/download/0.13/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
