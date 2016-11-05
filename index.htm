@@ -65,16 +65,24 @@ _[Edit Chart](https://github.com/sosumii/mostvulnerable.github.io/blob/master/in
 
 # Exemplary Best Practices
 
-Exemplary          | Cryptographic Signature (PGP) | Checksum (SHA256) | Category
--------------------|-------------------------------|-------------------|----------------------------------------------
-[Espionage][esp]   | Yes - [key][esp-pgp]          | Yes               | Encryption and Plausible Deniability
-[KeyPassX][kpx]    | Yes - [key][kpx-pgp]          | Yes               | Password Manager
-[Duplicati][dup]   | Yes - [key][dup-pgp]          | Yes               | Backup encrypted to S3, SFTP, SMB, local, etc
+Exemplary           | Cryptographic Signature (PGP) | Checksum (SHA256) | Category
+--------------------|-------------------------------|-------------------|----------------------------------------------
+[Espionage][esp]    | Yes - [key][esp-pgp]          | Yes               | Encryption and Plausible Deniability
+[KeyPassX][kpx]     | Yes - [key][kpx-pgp]          | Yes               | Password Manager with [migration from 1Password][kpx-1p]
+[pass][pas]         | Yes - [key][pas-pgp]          | No                | CLI password manager with [migration from 1Password script][pas-1p]
+[Password Safe][pws]| Yes - [key][pws-pgp]          | Yes               | Password Manager _"Designed by renowned security technologist Bruce Schneier"_
+[Duplicati][dup]    | Yes - [key][dup-pgp]          | Yes               | Backup encrypted to S3, SFTP, SMB, local, etc
 
 [esp]: https://www.espionageapp.com/
 [esp-pgp]: https://www.taoeffect.com/other/A884B988.asc
 [kpx]: https://www.keepassx.org/
 [kpx-pgp]: https://www.keepassx.org/gpg/0x83135D45.asc
+[kpx-1p]: http://keepass.info/help/base/importexport.html#imp_1pwpro
+[pas]: https://www.passwordstore.org/
+[pas-pgp]: http://www.zx2c4.com/keys/AB9942E6D4A4CFC3412620A749FC7012A5DE03AE.asc
+[pas-1p]: https://www.passwordstore.org/#migration
+[pws]: https://pwsafe.org/
+[pws-pgp]: https://sks-keyservers.net/pks/lookup?op=get&search=0x1D795A91FA175557
 [dup]: http://www.duplicati.com/
 [dup-pgp]: http://pgp.mit.edu/pks/lookup?search=0xC20E90473DAC703D&op=index
 
