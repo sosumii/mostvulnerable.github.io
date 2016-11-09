@@ -1,6 +1,6 @@
 # mostvulnerable.com
 
-This is a list of developers that have been hit with a **watering hole attack** or _will be_, and provide _no authentication_ for their software. Some of the software in this list is critical backup software that runs as _root_ to clone disks, like _SuperDuper!_.
+This is a list of developers that have been hit with a **watering hole attack** or are _potential targets_,, and provide _no authentication_ for their software. Some of the software in this list is critical backup software that runs as _root_ to clone disks, like _SuperDuper!_.
 
 _Backup software is the ultimate target of the watering hole attack_.
 
