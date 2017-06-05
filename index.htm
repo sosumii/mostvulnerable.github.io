@@ -73,6 +73,7 @@ Exemplary           | Cryptographic Signature (PGP) | Checksum (SHA256) | Catego
 --------------------|-------------------------------|-------------------|----------------------------------------------
 [Espionage][esp]    | Yes - [key][esp-pgp]          | Yes               | Encryption and Plausible Deniability
 [Apple XQuartz][xqt]| Yes - [key][xqt-pgp]          | Yes               | Apple's open-source effort to develop X.Org for MacOS
+[Mumble][mum]       | Yes - [key][mum-pgp]          | Yes               | Open source, low-latency, high quality voice chat software.
 [KeyPassX][kpx]     | Yes - [key][kpx-pgp]          | Yes               | Password Manager with [migration from 1Password][kpx-1p]
 [pass][pas]         | Yes - [key][pas-pgp]          | No                | CLI password manager with [migration from 1Password script][pas-1p]
 [Password Safe][pws]| Yes - [key][pws-pgp]          | Yes               | Password Manager _"Designed by renowned security technologist Bruce Schneier"_
@@ -83,6 +84,10 @@ Exemplary           | Cryptographic Signature (PGP) | Checksum (SHA256) | Catego
 
 [esp]: https://www.espionageapp.com/
 [esp-pgp]: https://www.taoeffect.com/other/A884B988.asc
+[xqt]: https://www.xquartz.org/
+[xqt-pgp]: https://sks-keyservers.net/pks/lookup?op=get&search=0x8C2D409E37F53663
+[mum]: https://wiki.mumble.info/wiki/Main_Page
+[mum-pgp]: https://sks-keyservers.net/pks/lookup?op=get&search=0x88048D0D625297A0
 [kpx]: https://www.keepassx.org/
 [kpx-pgp]: https://www.keepassx.org/gpg/0x83135D45.asc
 [kpx-1p]: http://keepass.info/help/base/importexport.html#imp_1pwpro
@@ -95,15 +100,17 @@ Exemplary           | Cryptographic Signature (PGP) | Checksum (SHA256) | Catego
 [dup-pgp]: http://pgp.mit.edu/pks/lookup?search=0xC20E90473DAC703D&op=index
 [bmg]: https://bitmessage.org/wiki/Main_Page
 [bmg-pgp]: http://pool.sks-keyservers.net/pks/lookup?op=get&search=0x0C5F50C0B5F37D87
-[xqt]: https://www.xquartz.org/
-[xqt-pgp]: https://sks-keyservers.net/pks/lookup?op=get&search=0x8C2D409E37F53663
 
-Redeemed             | Cryptographic Signature (PGP)       | Checksum (SHA256) | Exploited                              | Note
----------------------|-------------------------------------|-------------------|----------------------------------------|--------------------------------------------
-HandBrake            | [Yes][hand-redeem] - [key][hnd-pgp] | Yes               | Compromised & corrected [1][hand-exp]  | Thanks to [@sr55](https://github.com/sr55)
+Redeemed             | Cryptographic Signature (PGP)       | Checksum (SHA256) | Exploited                                        | Note
+---------------------|-------------------------------------|-------------------|--------------------------------------------------|--------------------------------------------
+HandBrake            | [Yes][hand-redeem] - [key][hnd-pgp] | Yes               | Watering hole attack. Corrected [1][hand-exp]    | Thanks to [@sr55](https://github.com/sr55)
+Linux Mint           | [Yes][mint-redeem] - [key][mnt-pgp] | Yes               | Watering hole attack. Corrected [1][mint-exp]    | They sign their SHA256 sums. Kinda a PITA.
 
 [hand-redeem]: https://github.com/HandBrake/HandBrake/issues/728
 [hand-exp]: https://www.macrumors.com/2017/05/07/handbrake-app-security-warning-servers-hacked/
 [hnd-pgp]: https://sks-keyservers.net/pks/lookup?op=get&search=0x021DB8B44E4A8645
+[mint-redeem]: https://linuxmint.com/verify.php
+[mint-exp]: http://blog.linuxmint.com/?p=2994
+[mnt-pgp]: http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x300F846BA25BAE09
 
 <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js"></script><script src="https://github.com/reelsense/markdeep/releases/download/0.18/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
