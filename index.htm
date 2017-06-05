@@ -17,21 +17,25 @@ _Backup software is the ultimate target of the watering hole attack_.
 # The Lowest Standards
 
 
-Insecurely Distributed Software | Cryptographic Signature (PGP) | Checksum (SHA256) | Exploited                  | Tell them to sign
---------------------------------|-------------------------------|-------------------|----------------------------|------------------
-Transmission BitTorrent         | No                            | Yes               | Compromised [(2 times)][tran-exp]| [Submit an issue][tran-tell]
-1Password                       | No (WTF?)                     | No                | Unknown                    | [Email them][1p-tell1]
-SuperDuper!                     | No                            | No                | Unknown                    | [Email them][supd-tell]
-Carbon Copy Cloner              | No                            | No                | Unknown                    | [Submit an issue][ccc-tell]
-Arq Backup                      | No                            | No                | Unknown                    | [Email them][arq-tell1]
-Librevault                      | No                            | No                | Unknown                    | [Submit an issue][lib-tell]
+Insecurely Distributed Software | Cryptographic Signature (PGP) | Checksum (SHA256) | Exploited                                     | Tell them to sign
+--------------------------------|-------------------------------|-------------------|-----------------------------------------------|------------------
+Transmission BitTorrent         | No                            | Yes               | Compromised [(2 times)][tran-exp]             | [Submit an issue][tran-tell]
+1Password                       | No (WTF?)                     | No                | Unknown                                       | [Email them][1p-tell1]
+Transmit - Panic Inc.           | No                            | No                | [Hacked][pnic-exp] by [Handbrake][hand-exp]   | [Email them][pnic-tell]
+Coda - Panic Inc.               | No                            | No                | [Hacked][pnic-exp] by [Handbrake][hand-exp]   | [Email them][pnic-tell]
+SuperDuper!                     | No                            | No                | Unknown                                       | [Email them][supd-tell]
+Carbon Copy Cloner              | No                            | No                | Unknown                                       | [Submit an issue][ccc-tell]
+Arq Backup                      | No                            | No                | Unknown                                       | [Email them][arq-tell1]
+Librevault                      | No                            | No                | Unknown                                       | [Submit an issue][lib-tell]
 
 [tran-exp]: https://en.wikipedia.org/wiki/Transmission_%28BitTorrent_client%29#Website_breach
 [tran-tell]: https://github.com/transmission/transmission/issues
+[1p-tell1]: mailto:support+kb@agilebits.com?subject=Question%20about%201Password
+[pnic-exp]: https://www.macrumors.com/2017/05/17/panic-source-code-stolen-in-handbrake-attack/
+[pnic-tell]: mailto:transmit@panic.com?subject=Please PGP sign -mostvulnerable.com
 [supd-tell]: mailto:support@shirt-pocket.com?subject=Support Request
 [ccc-tell]: https://support.bombich.com/hc/en-us/requests/new
 [arq-tell1]: mailto:support@arqbackup.com?subject=Please PGP sign -mostvulnerable.com
-[1p-tell1]: mailto:support+kb@agilebits.com?subject=Question%20about%201Password
 [lib-tell]: https://github.com/Librevault/librevault/issues
 
 _[Edit Chart](https://github.com/sosumii/mostvulnerable.github.io/blob/master/index.htm) - [Report Issue](https://github.com/sosumii/mostvulnerable.github.io/issues)_
@@ -60,7 +64,7 @@ _[Edit Chart](https://github.com/sosumii/mostvulnerable.github.io/blob/master/in
 > * Some people say they don't understand how PGP works. Some say they don't care.
 >
 >* Use modern software from developers that are not averse to security best practices.
-> * [See Exemplary list below](index.htm#toc3)
+> * [See Exemplary list below](index.htm#toc4)
 >
 ### See an issue or want to add to this website?
 >
@@ -69,16 +73,17 @@ _[Edit Chart](https://github.com/sosumii/mostvulnerable.github.io/blob/master/in
 
 # Exemplary Best Practices
 
-Exemplary           | Cryptographic Signature (PGP) | Checksum (SHA256) | Category
---------------------|-------------------------------|-------------------|----------------------------------------------
-[Espionage][esp]    | Yes - [key][esp-pgp]          | Yes               | Encryption and Plausible Deniability
-[Apple XQuartz][xqt]| Yes - [key][xqt-pgp]          | Yes               | Apple's open-source effort to develop X.Org for MacOS
-[Mumble][mum]       | Yes - [key][mum-pgp]          | Yes               | Open source, low-latency, high quality voice chat software.
-[KeyPassX][kpx]     | Yes - [key][kpx-pgp]          | Yes               | Password Manager with [migration from 1Password][kpx-1p]
-[pass][pas]         | Yes - [key][pas-pgp]          | No                | CLI password manager with [migration from 1Password script][pas-1p]
-[Password Safe][pws]| Yes - [key][pws-pgp]          | Yes               | Password Manager _"Designed by renowned security technologist Bruce Schneier"_
-[Duplicati][dup]    | Yes - [key][dup-pgp]          | Yes               | Backup encrypted to S3, SFTP, SMB, local, etc
-[Bitmessage][bmg]   | Yes - [key][bmg-pgp]          | No                | P2P entrypted store and forward messaging
+Exemplary           | Cryptographic Signature (PGP)                 | Checksum (SHA256) | Category
+--------------------|-----------------------------------------------|-------------------|----------------------------------------------
+[Espionage][esp]    | Yes - [key][esp-pgp]                          | Yes               | Encryption and Plausible Deniability
+[Apple XQuartz][xqt]| Yes - [key][xqt-pgp]                          | Yes               | Apple's open-source effort to develop X.Org for MacOS
+[Apple Swift][swft] | Yes - [k][swft-pgp1][e][swft-pgp2][y][swft-pgp3] | No             | Apple's open-source Swift language
+[Mumble][mum]       | Yes - [key][mum-pgp]                          | Yes               | Open source, low-latency, high quality voice chat software
+[KeyPassX][kpx]     | Yes - [key][kpx-pgp]                          | Yes               | Password Manager with [migration from 1Password][kpx-1p]
+[pass][pas]         | Yes - [key][pas-pgp]                          | No                | CLI password manager with [migration from 1Password script][pas-1p]
+[Password Safe][pws]| Yes - [key][pws-pgp]                          | Yes               | Password Manager _"Designed by renowned security technologist Bruce Schneier"_
+[Duplicati][dup]    | Yes - [key][dup-pgp]                          | Yes               | Backup encrypted to S3, SFTP, SMB, local, etc
+[Bitmessage][bmg]   | Yes - [key][bmg-pgp]                          | No                | P2P entrypted store and forward messaging
 
 # Redeemed
 
@@ -86,6 +91,10 @@ Exemplary           | Cryptographic Signature (PGP) | Checksum (SHA256) | Catego
 [esp-pgp]: https://www.taoeffect.com/other/A884B988.asc
 [xqt]: https://www.xquartz.org/
 [xqt-pgp]: https://sks-keyservers.net/pks/lookup?op=get&search=0x8C2D409E37F53663
+[swft]: https://swift.org/
+[swft-pgp1]: https://sks-keyservers.net/pks/lookup?op=get&search=0xD441C977412B37AD
+[swft-pgp2]: https://sks-keyservers.net/pks/lookup?op=get&search=0x9F597F4D21A56D5F
+[swft-pgp3]: https://sks-keyservers.net/pks/lookup?op=get&search=0x63BC1CFE91D306C6
 [mum]: https://wiki.mumble.info/wiki/Main_Page
 [mum-pgp]: https://sks-keyservers.net/pks/lookup?op=get&search=0x88048D0D625297A0
 [kpx]: https://www.keepassx.org/
