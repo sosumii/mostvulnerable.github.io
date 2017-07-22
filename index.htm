@@ -21,8 +21,6 @@ Insecurely Distributed Software | Cryptographic Signature (PGP) | Checksum (SHA2
 --------------------------------|-------------------------------|-------------------|-----------------------------------------------|------------------
 Transmission BitTorrent         | No                            | Yes               | Compromised [(2 times)][tran-exp]             | [Submit an issue][tran-tell]
 1Password                       | No (WTF?)                     | No                | Unknown                                       | [Email them][1p-tell1]
-Transmit - Panic Inc.           | No                            | No                | [Hacked][pnic-exp] by [Handbrake][hand-exp]   | [Email them][pnic-tell]
-Coda - Panic Inc.               | No                            | No                | [Hacked][pnic-exp] by [Handbrake][hand-exp]   | [Email them][pnic-tell]
 SuperDuper!                     | No                            | No                | Unknown                                       | [Email them][supd-tell]
 Carbon Copy Cloner              | No                            | No                | Unknown                                       | [Submit an issue][ccc-tell]
 Arq Backup                      | No                            | No                | Unknown                                       | [Email them][arq-tell1]
@@ -31,8 +29,6 @@ Librevault                      | No                            | No            
 [tran-exp]: https://en.wikipedia.org/wiki/Transmission_%28BitTorrent_client%29#Website_breach
 [tran-tell]: https://github.com/transmission/transmission/issues
 [1p-tell1]: mailto:support+kb@agilebits.com?subject=Question%20about%201Password
-[pnic-exp]: https://www.macrumors.com/2017/05/17/panic-source-code-stolen-in-handbrake-attack/
-[pnic-tell]: mailto:transmit@panic.com?subject=Please PGP sign -mostvulnerable.com
 [supd-tell]: mailto:support@shirt-pocket.com?subject=Support Request
 [ccc-tell]: https://support.bombich.com/hc/en-us/requests/new
 [arq-tell1]: mailto:support@arqbackup.com?subject=Please PGP sign -mostvulnerable.com
@@ -48,7 +44,7 @@ _[Edit Chart](https://github.com/sosumii/mostvulnerable.github.io/blob/master/in
 >
 >* Digital signatures ensure [data authenticity](https://en.wikipedia.org/wiki/Authentication).
 >
->When downloading a file, errors may occur during that process. Malware also could modify the downloaded file if you're machine is infected. The file's fingerprint (checksum) >is there to tell you that the file is not altered.
+>When downloading a file, errors may occur during that process. Malware also could modify the downloaded file if you're machine is infected. The file's fingerprint (checksum) is there to tell you that the file is not altered.
 >
 >An attacker may host a malicious version of *transmission* on his website and makes it available to download. Verifying the checksum in this case is useless: the only way for you to be sure that you did not download a malicious version of *transmission* is to check its signature(s).
 
@@ -73,20 +69,21 @@ _[Edit Chart](https://github.com/sosumii/mostvulnerable.github.io/blob/master/in
 
 # Exemplary Best Practices
 
-Exemplary           | Cryptographic Signature (PGP)                 | Checksum (SHA256) | Category
---------------------|-----------------------------------------------|-------------------|----------------------------------------------
-[Espionage][esp]    | Yes - [key][esp-pgp]                          | Yes               | Encryption and Plausible Deniability
-[Apple XQuartz][xqt]| Yes - [key][xqt-pgp]                          | Yes               | Apple's open-source effort to develop X.Org for MacOS
-[Apple Swift][swft] | Yes - [k][swft-pgp1][e][swft-pgp2][y][swft-pgp3] | No             | Apple's open-source Swift language
-[Mumble][mum]       | Yes - [key][mum-pgp]                          | Yes               | Open source, low-latency, high quality voice chat software
-[KeyPassX][kpx]     | Yes - [key][kpx-pgp]                          | Yes               | Password Manager with [migration from 1Password][kpx-1p]
-[pass][pas]         | Yes - [key][pas-pgp]                          | No                | CLI password manager with [migration from 1Password script][pas-1p]
-[Password Safe][pws]| Yes - [key][pws-pgp]                          | Yes               | Password Manager _"Designed by renowned security technologist Bruce Schneier"_
-[Duplicati][dup]    | Yes - [key][dup-pgp]                          | Yes               | Backup encrypted to S3, SFTP, SMB, local, etc
-[Bitmessage][bmg]   | Yes - [key][bmg-pgp]                          | No                | P2P entrypted store and forward messaging
+Exemplary                     | Cryptographic Signature (PGP)                    | Checksum (SHA256) | Category
+------------------------------|--------------------------------------------------|-------------------|----------------------------------------------
+[Espionage][esp]              | Yes - [key][esp-pgp]                             | Yes               | Encryption and Plausible Deniability
+[Apple XQuartz][xqt]          | Yes - [key][xqt-pgp]                             | Yes               | Apple's open-source effort to develop X.Org for MacOS
+[Apple Swift][swft]           | Yes - [k][swft-pgp1][e][swft-pgp2][y][swft-pgp3] | No                | Apple's open-source Swift language
+[Transmit][tpnc] - Panic Inc. | Yes - [key][pnic-pgp]                            | Yes               | Upload, download, and manage files on tons of servers - [redeemed from a hack][redeemed from a hack]
+[Coda][cpnc] - Panic Inc.     | Yes - [key][pnic-pgp]                            | Yes               | Open, manage, & edit your local and remote code - [redeemed from a hack][redeemed from a hack]
+[Mumble][mum]                 | Yes - [key][mum-pgp]                             | Yes               | Open source, low-latency, high quality voice chat software
+[KeyPassX][kpx]               | Yes - [key][kpx-pgp]                             | Yes               | Password Manager with [migration from 1Password][kpx-1p]
+[pass][pas]                   | Yes - [key][pas-pgp]                             | No                | CLI password manager with [migration from 1Password script][pas-1p]
+[Password Safe][pws]          | Yes - [key][pws-pgp]                             | Yes               | Password Manager _"Designed by renowned security technologist Bruce Schneier"_
+[Duplicati][dup]              | Yes - [key][dup-pgp]                             | Yes               | Backup encrypted to S3, SFTP, SMB, local, etc
+[Bitmessage][bmg]             | Yes - [key][bmg-pgp]                             | No                | P2P entrypted store and forward messaging
 
-# Redeemed
-
+[redeemed from a hack]: index.htm#toc5
 [esp]: https://www.espionageapp.com/
 [esp-pgp]: https://www.taoeffect.com/other/A884B988.asc
 [xqt]: https://www.xquartz.org/
@@ -95,6 +92,9 @@ Exemplary           | Cryptographic Signature (PGP)                 | Checksum (
 [swft-pgp1]: https://sks-keyservers.net/pks/lookup?op=get&search=0xD441C977412B37AD
 [swft-pgp2]: https://sks-keyservers.net/pks/lookup?op=get&search=0x9F597F4D21A56D5F
 [swft-pgp3]: https://sks-keyservers.net/pks/lookup?op=get&search=0x63BC1CFE91D306C6
+[tpnc]: https://panic.com/transmit/
+[cpnc]: https://panic.com/coda/
+[pnic-pgp]: https://keybase.io/panic/pgp_keys.asc
 [mum]: https://wiki.mumble.info/wiki/Main_Page
 [mum-pgp]: https://sks-keyservers.net/pks/lookup?op=get&search=0x88048D0D625297A0
 [kpx]: https://www.keepassx.org/
@@ -110,10 +110,14 @@ Exemplary           | Cryptographic Signature (PGP)                 | Checksum (
 [bmg]: https://bitmessage.org/wiki/Main_Page
 [bmg-pgp]: http://pool.sks-keyservers.net/pks/lookup?op=get&search=0x0C5F50C0B5F37D87
 
-Redeemed             | Cryptographic Signature (PGP)       | Checksum (SHA256) | Exploited                                        | Note
----------------------|-------------------------------------|-------------------|--------------------------------------------------|--------------------------------------------
-HandBrake            | [Yes][hand-redeem] - [key][hnd-pgp] | Yes               | Watering hole attack. Corrected [1][hand-exp]    | Thanks to [@sr55](https://github.com/sr55)
-Linux Mint           | [Yes][mint-redeem] - [key][mnt-pgp] | Yes               | Watering hole attack. Corrected [1][mint-exp]    | They sign their SHA256 sums. Kinda a PITA.
+# Redeemed
+
+Redeemed               | Cryptographic Signature (PGP)        | Checksum (SHA256) | Exploited                                        | Note
+-----------------------|--------------------------------------|-------------------|--------------------------------------------------|--------------------------------------------
+HandBrake              | [Yes][hand-redeem] - [key][hnd-pgp]  | Yes               | Watering hole attack. Corrected [1][hand-exp]    | Thanks to [@sr55](https://github.com/sr55)
+Linux Mint             | [Yes][mint-redeem] - [key][mnt-pgp]  | Yes               | Watering hole attack. Corrected [1][mint-exp]    | They sign their SHA256 sums. Kinda a PITA.
+Transmit - Panic Inc.  | [Yes][pnic-redeem] - [key][pnic-pgp] | Yes               | Watering hole attack. Corrected [1][hand-exp]    | Thanks Panic! Some one at Panic is awesome!
+Coda - Panic Inc.      | [Yes][pnic-redeem] - [key][pnic-pgp] | Yes               | Watering hole attack. Corrected [1][hand-exp]    | Panic's PGP signature gives me wood.
 
 [hand-redeem]: https://github.com/HandBrake/HandBrake/issues/728
 [hand-exp]: https://www.macrumors.com/2017/05/07/handbrake-app-security-warning-servers-hacked/
@@ -121,5 +125,8 @@ Linux Mint           | [Yes][mint-redeem] - [key][mnt-pgp] | Yes               |
 [mint-redeem]: https://linuxmint.com/verify.php
 [mint-exp]: http://blog.linuxmint.com/?p=2994
 [mnt-pgp]: http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x300F846BA25BAE09
+[pnic-redeem]: https://library.panic.com/transmit5/release-integrity/
+[pnic-exp]: https://www.macrumors.com/2017/05/17/panic-source-code-stolen-in-handbrake-attack/
+[pnic-pgp]: https://keybase.io/panic/pgp_keys.asc
 
 <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js"></script><script src="https://github.com/reelsense/markdeep/releases/download/0.18/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
