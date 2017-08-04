@@ -4,7 +4,7 @@
 
 # Inauthentic Downloads
 
-This is a list of developers that have been hit with a **watering hole attack** or are _potential targets_, and provide _no authentication_ for their software. Some of the software in this list is critical backup software that runs as _root_ to clone disks, like _SuperDuper!_.
+This is a list of developers that have been hit with a **watering hole attack** or are _potential targets_, and provide _no way to authenticate_ their software with PGP. Some of the software in this list is critical backup software that runs as _root_ to clone disks, like _SuperDuper!_.
 
 _Backup software is the ultimate target of the watering hole attack_.
 
@@ -14,10 +14,10 @@ _Backup software is the ultimate target of the watering hole attack_.
 >
 > Relying on websites that the group trusts makes this strategy efficient, even with groups that are resistant to spear phishing and other forms of phishing.
 
+
 # The Lowest Standards
 
-
-Insecurely Distributed Software | Cryptographic Signature (PGP) | Checksum (SHA256) | Exploited                                     | Tell them to sign
+"Missed the Mark"                | Cryptographic Signature (PGP) | Checksum (SHA256) | Exploited                                     | Tell them to sign
 --------------------------------|-------------------------------|-------------------|-----------------------------------------------|------------------
 Transmission BitTorrent         | No                            | Yes               | Compromised [(2 times)][tran-exp]             | [Submit an issue][tran-tell]
 1Password                       | No (WTF?)                     | No                | Unknown                                       | [Email them][1p-tell1]
@@ -35,6 +35,7 @@ Librevault                      | No                            | No            
 [lib-tell]: https://github.com/Librevault/librevault/issues
 
 _[Edit Chart](https://github.com/sosumii/mostvulnerable.github.io/blob/master/index.htm) - [Report Issue](https://github.com/sosumii/mostvulnerable.github.io/issues)_
+
 
 # FAQ
 
@@ -54,7 +55,7 @@ _[Edit Chart](https://github.com/sosumii/mostvulnerable.github.io/blob/master/in
 > * _Eg._ Transmission users were autoupdated to compromised binaries with **VALID `codesign` Developer IDs**.
 >
 
-### But I love that software. What do I do?
+### I love that software. What do I do?
 >
 >* [Tell them](index.htm#toc1) you would like to keep using their software and you would like to authenticate it with a PGP signature.
 > * Some people say they don't understand how PGP works. Some say they don't care.
@@ -67,21 +68,22 @@ _[Edit Chart](https://github.com/sosumii/mostvulnerable.github.io/blob/master/in
 >* Fork it or create an issue on [GitHub](https://github.com/sosumii/mostvulnerable.github.io/).
 >
 
+
 # Exemplary Best Practices
 
-Exemplary                     | Cryptographic Signature (PGP)                    | Checksum (SHA256) | Category
-------------------------------|--------------------------------------------------|-------------------|----------------------------------------------
-[Espionage][esp]              | Yes - [key][esp-pgp]                             | Yes               | Encryption and Plausible Deniability
-[Apple XQuartz][xqt]          | Yes - [key][xqt-pgp]                             | Yes               | Apple's open-source effort to develop X.Org for MacOS
-[Apple Swift][swft]           | Yes - [k][swft-pgp1][e][swft-pgp2][y][swft-pgp3] | No                | Apple's open-source Swift language
-[Transmit][tpnc] - Panic Inc. | Yes - [key][pnic-pgp]                            | Yes               | Upload, download, and manage files on tons of servers - [redeemed from a hack][redeemed from a hack]
-[Coda][cpnc] - Panic Inc.     | Yes - [key][pnic-pgp]                            | Yes               | Open, manage, & edit your local and remote code - [redeemed from a hack][redeemed from a hack]
-[Mumble][mum]                 | Yes - [key][mum-pgp]                             | Yes               | Open source, low-latency, high quality voice chat software
-[KeyPassX][kpx]               | Yes - [key][kpx-pgp]                             | Yes               | Password Manager with [migration from 1Password][kpx-1p]
-[pass][pas]                   | Yes - [key][pas-pgp]                             | No                | CLI password manager with [migration from 1Password script][pas-1p]
-[Password Safe][pws]          | Yes - [key][pws-pgp]                             | Yes               | Password Manager _"Designed by renowned security technologist Bruce Schneier"_
-[Duplicati][dup]              | Yes - [key][dup-pgp]                             | Yes               | Backup encrypted to S3, SFTP, SMB, local, etc
-[Bitmessage][bmg]             | Yes - [key][bmg-pgp]                             | No                | P2P entrypted store and forward messaging
+Exemplary                      | Cryptographic Signature (PGP)                    | Checksum (SHA256) | Category
+-------------------------------|--------------------------------------------------|-------------------|----------------------------------------------
+[Espionage][esp] - Greg Slepak | Yes - [key][esp-pgp]                             | Yes               | Encryption and Plausible Deniability
+[XQuartz][xqt] - Apple Inc.    | Yes - [key][xqt-pgp]                             | Yes               | Apple's open-source effort to develop X.Org for MacOS
+[Swift][swft] - Apple Inc.     | Yes - [k][swft-pgp1][e][swft-pgp2][y][swft-pgp3] | No                | Apple's open-source Swift language
+[Transmit][tpnc] - Panic Inc.  | Yes - [key][pnic-pgp]                            | Yes               | Upload, download, and manage files on tons of servers - [redeemed from a hack][redeemed from a hack]
+[Coda][cpnc] - Panic Inc.      | Yes - [key][pnic-pgp]                            | Yes               | Open, manage, & edit your local and remote code - [redeemed from a hack][redeemed from a hack]
+[Mumble][mum]                  | Yes - [key][mum-pgp]                             | Yes               | Open source, low-latency, high quality voice chat software
+[KeyPassX][kpx]                | Yes - [key][kpx-pgp]                             | Yes               | Password Manager with [migration from 1Password][kpx-1p]
+[pass][pas]                    | Yes - [key][pas-pgp]                             | No                | CLI password manager with [migration from 1Password script][pas-1p]
+[Password Safe][pws]           | Yes - [key][pws-pgp]                             | Yes               | Password Manager _"Designed by renowned security technologist Bruce Schneier"_
+[Duplicati][dup]               | Yes - [key][dup-pgp]                             | Yes               | Backup encrypted to S3, SFTP, SMB, local, etc
+[Bitmessage][bmg]              | Yes - [key][bmg-pgp]                             | No                | P2P entrypted store and forward messaging
 
 [redeemed from a hack]: index.htm#toc5
 [esp]: https://www.espionageapp.com/
