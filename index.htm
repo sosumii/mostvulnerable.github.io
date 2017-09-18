@@ -21,6 +21,7 @@ _Backup software is the ultimate target of the watering hole attack_.
 --------------------------------|-------------------------------|-------------------|-----------------------------------------------|------------------
 Transmission BitTorrent         | No                            | Yes               | Compromised [(2 times)][tran-exp]             | [Submit an issue][tran-tell]
 1Password                       | No (WTF?)                     | No                | Unknown                                       | [Email them][1p-tell1]
+CCleaner - Avast                | No (WTF?)                     | No                | Compromised [1][clnr-exp]                     | [Submit a ticket][clnr-tell]
 SuperDuper!                     | No                            | No                | Unknown                                       | [Email them][supd-tell]
 Carbon Copy Cloner              | No                            | No                | Unknown                                       | [Submit an issue][ccc-tell]
 Arq Backup                      | No                            | No                | Unknown                                       | [Email them][arq-tell1]
@@ -29,6 +30,8 @@ Librevault                      | No                            | No            
 [tran-exp]: https://en.wikipedia.org/wiki/Transmission_%28BitTorrent_client%29#Website_breach
 [tran-tell]: https://github.com/transmission/transmission/issues
 [1p-tell1]: mailto:support+kb@agilebits.com?subject=Question%20about%201Password
+[clnr-exp]: https://www.bleepingcomputer.com/news/security/ccleaner-compromised-to-distribute-malware-for-almost-a-month/
+[clnr-tell]: https://support.avast.com/support/tickets/new
 [supd-tell]: mailto:support@shirt-pocket.com?subject=Support Request
 [ccc-tell]: https://support.bombich.com/hc/en-us/requests/new
 [arq-tell1]: mailto:support@arqbackup.com?subject=Please PGP sign -mostvulnerable.com
@@ -43,7 +46,7 @@ _[Edit Chart](https://github.com/sosumii/mostvulnerable.github.io/blob/master/in
 >
 >* Checksums ensure [data integrity](https://en.wikipedia.org/wiki/Data_integrity).
 >
->* Digital signatures ensure [data authenticity](https://en.wikipedia.org/wiki/Authentication).
+>* Cryptographic signatures ensure [data authenticity](https://en.wikipedia.org/wiki/Authentication).
 >
 >When downloading a file, errors may occur during that process. Malware also could modify the downloaded file if you're machine is infected. The file's fingerprint (checksum) is there to tell you that the file is not altered.
 >
